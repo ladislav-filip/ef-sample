@@ -22,6 +22,11 @@ namespace HelloIoC.DAL.Facade
             return contactRepository.GetById(id);
         }
 
+        public void RemoveContact(ContactDTO contactDTO)
+        {
+            contactRepository.Delete(contactDTO.Id);
+        }
+
         public IList<ContactDTO> GetAllContacts()
         {
             var contactQueryFactory = allContactQueryFactory();

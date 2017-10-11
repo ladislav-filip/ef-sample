@@ -19,12 +19,22 @@ namespace HelloIoC.DAL.Repository
                 //() => Email
                 //var memberExpression = mapper.MapContactToContactDTOExpression.Body as MemberExpression;
                 //memberExpression.Member.Name
-                
+
                 //var contactDTO = db.Contacts.Select(mapper.MapContactToContactDTOExpression).FirstOrDefault(c => c.Id == id);
                 //return contactDTO;
 
                 var contact = db.Contacts.Find(id);
                 return mapper.MapContactToContactDTO(contact);
+            }
+        }
+
+        public void Delete(int id)
+        {
+            using (var db = new ContactDbContext())
+            {
+                var contact = new Contact { Id = id };
+                db.Contacts.Attach(contact);
+                db.Contacts.Remove(contact);
             }
         }
     }
