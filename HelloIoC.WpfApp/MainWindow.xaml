@@ -1,0 +1,33 @@
+﻿<Window x:Class="HelloIoC.WpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HelloIoC.WpfApp"
+        xmlns:viewModels="clr-namespace:HelloIoC.WpfApp.ViewModels"
+        mc:Ignorable="d"
+        d:DataContext="{d:DesignInstance viewModels:ContactListViewModel}"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        
+        <ItemsControl ItemsSource="{Binding Contacts}" x:Name="Contacts">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock>
+                        <Run Text="{Binding Name}" />
+                        <Run Text=" - "></Run>
+                        <Run Text="{Binding Email}"></Run>
+                        </TextBlock>
+                        <Button Content="Detail" CommandParameter="{Binding}" Command="{Binding DataContext.OpenDetailCommand, ElementName=Contacts}"></Button>
+                    </StackPanel>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+        
+    </Grid>
+</Window>

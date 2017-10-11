@@ -1,0 +1,21 @@
+﻿<Window x:Class="HelloIoC.WpfApp.ContactDetail"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HelloIoC.WpfApp"
+        xmlns:viewModels="clr-namespace:HelloIoC.WpfApp.ViewModels"
+        mc:Ignorable="d"
+        d:DataContext="{d:DesignInstance viewModels:ContactDetailViewModel}"
+        Title="ContactDetail" Height="300" Width="300">
+    <StackPanel Orientation="Vertical">
+        <TextBlock>
+            <Run Text="Jméno: "></Run>
+            <Run Text="{Binding Contact.Name}"></Run>
+        </TextBlock>
+        <TextBlock>
+            <Run Text="Email: "></Run>
+            <Run Text="{Binding Contact.Email}"></Run>
+        </TextBlock>
+    </StackPanel>
+</Window>
