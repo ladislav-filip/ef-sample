@@ -10,3 +10,7 @@ c:\users\martin\source\repos\HelloIoC\HelloIoC.DAL\obj\Debug\HelloIoC.DAL.csproj
 c:\users\martin\source\repos\HelloIoC\HelloIoC.DAL\obj\Debug\HelloIoC.DAL.csproj.CoreCompileInputs.cache
 c:\users\martin\source\repos\HelloIoC\HelloIoC.DAL\obj\Debug\HelloIoC.DAL.exe
 c:\users\martin\source\repos\HelloIoC\HelloIoC.DAL\obj\Debug\HelloIoC.DAL.pdb
+c:\users\martin\source\repos\HelloIoC\HelloIoC.DAL\bin\Debug\Castle.Core.dll
+c:\users\martin\source\repos\HelloIoC\HelloIoC.DAL\bin\Debug\Castle.Windsor.dll
+c:\users\martin\source\repos\HelloIoC\HelloIoC.DAL\bin\Debug\Castle.Windsor.xml
+c:\users\martin\source\repos\HelloIoC\HelloIoC.DAL\obj\Debug\HelloIoC.DAL.csprojResolveAssemblyReference.cache

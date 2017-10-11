@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Castle.Windsor;
 using HelloIoC.DAL.DTO;
 using HelloIoC.DAL.Facade;
 using HelloIoC.DAL.Query;
 using HelloIoC.DAL.Repository;
+using HelloIoC.DAL._Installer;
 
 namespace HelloIoC.DAL
 {
@@ -14,22 +16,16 @@ namespace HelloIoC.DAL
     {
         static void Main(string[] args)
         {
-            var mapper = new Mapper();
+            var container = new WindsorContainer();
 
-            var contactListFacade = new ContactListFacade(new ContactRepository(mapper), () => new AllContactQuery(new ContactFirstLevelQuery(), mapper));
+            container.Install(new DALInstaller());
+            container.Install(new BLInstaller());
 
-            var contact1 = contactListFacade.GetDetail(1);
-            PrintContactDetail(contact1);
+            var contactListApp = container.Resolve<ContactListApp>();
+           
+            contactListApp.App();
 
-            foreach (var contact in contactListFacade.GetAllContacts())
-            {
-                PrintContactDetail(contact);
-            }
-        }
-
-        private static void PrintContactDetail(ContactDTO contact)
-        {
-            Console.WriteLine($"{contact.Name}: {contact.Email}");
+            container.Release(contactListApp);
         }
     }
 }
