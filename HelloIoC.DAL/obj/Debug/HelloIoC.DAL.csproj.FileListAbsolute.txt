@@ -1,5 +1,3 @@
-c:\users\martin\source\repos\HelloIoC\HelloIoC.DAL\obj\Debug\HelloIoC.DAL.csprojResolveAssemblyReference.cache
-c:\users\martin\source\repos\HelloIoC\HelloIoC.DAL\obj\Debug\HelloIoC.DAL.csproj.CoreCompileInputs.cache
 c:\users\martin\source\repos\HelloIoC\HelloIoC.DAL\bin\Debug\HelloIoC.DAL.exe.config
 c:\users\martin\source\repos\HelloIoC\HelloIoC.DAL\bin\Debug\HelloIoC.DAL.exe
 c:\users\martin\source\repos\HelloIoC\HelloIoC.DAL\bin\Debug\HelloIoC.DAL.pdb
@@ -7,7 +5,8 @@ c:\users\martin\source\repos\HelloIoC\HelloIoC.DAL\bin\Debug\EntityFramework.dll
 c:\users\martin\source\repos\HelloIoC\HelloIoC.DAL\bin\Debug\EntityFramework.SqlServer.dll
 c:\users\martin\source\repos\HelloIoC\HelloIoC.DAL\bin\Debug\EntityFramework.xml
 c:\users\martin\source\repos\HelloIoC\HelloIoC.DAL\bin\Debug\EntityFramework.SqlServer.xml
-c:\users\martin\source\repos\HelloIoC\HelloIoC.DAL\obj\Debug\HelloIoC.DAL.exe
-c:\users\martin\source\repos\HelloIoC\HelloIoC.DAL\obj\Debug\HelloIoC.DAL.pdb
 c:\users\martin\source\repos\HelloIoC\HelloIoC.DAL\obj\Debug\HelloIoC.DAL.Migrations.CreateContactstable.resources
 c:\users\martin\source\repos\HelloIoC\HelloIoC.DAL\obj\Debug\HelloIoC.DAL.csproj.GenerateResource.Cache
+c:\users\martin\source\repos\HelloIoC\HelloIoC.DAL\obj\Debug\HelloIoC.DAL.csproj.CoreCompileInputs.cache
+c:\users\martin\source\repos\HelloIoC\HelloIoC.DAL\obj\Debug\HelloIoC.DAL.exe
+c:\users\martin\source\repos\HelloIoC\HelloIoC.DAL\obj\Debug\HelloIoC.DAL.pdb
