@@ -1,11 +1,9 @@
-﻿using System;
-using System.Linq;
-using System.Linq.Expressions;
+﻿using System.Linq;
 using HelloIoC.DAL.DTO;
 
 namespace HelloIoC.DAL.Repository
 {
-    public class ContactRepository
+    public class ContactRepository : IRepository
     {
         private readonly Mapper mapper;
 
@@ -29,21 +27,5 @@ namespace HelloIoC.DAL.Repository
                 return mapper.MapContactToContactDTO(contact);
             }
         }
-    }
-
-    public class Mapper
-    {
-        public ContactDTO MapContactToContactDTO(Contact contact)
-        {
-            return MapContactToContactDTOExpression.Compile()(contact);
-        }
-
-        public Expression<Func<Contact, ContactDTO>> MapContactToContactDTOExpression { get; } = c => new ContactDTO
-        {
-            Id = c.Id,
-            Name = c.Firstname + " " + c.Lastname,
-            Email = c.Email,
-            PhoneNumber = c.PhoneNumber
-        };
     }
 }

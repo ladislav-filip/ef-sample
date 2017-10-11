@@ -2,7 +2,7 @@
 
 namespace HelloIoC.DAL.Repository
 {
-    public interface IContactRepository
+    public interface IRepository
     {
         ContactDTO GetById(int id);
     }
