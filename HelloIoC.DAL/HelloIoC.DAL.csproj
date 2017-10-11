@@ -52,6 +52,7 @@
     <Compile Include="Entity\Contact.cs" />
     <Compile Include="ContactDbContext.cs" />
     <Compile Include="DTO\ContactDTO.cs" />
+    <Compile Include="Facade\ContactListFacade.cs" />
     <Compile Include="Migrations\201710111210211_Create Contacts table.cs" />
     <Compile Include="Migrations\201710111210211_Create Contacts table.Designer.cs">
       <DependentUpon>201710111210211_Create Contacts table.cs</DependentUpon>
@@ -59,7 +60,9 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Query\AllContactQuery.cs" />
+    <Compile Include="Query\Contact\AllContactQuery.cs" />
+    <Compile Include="Query\Contact\ContactFirstLevelQuery.cs" />
+    <Compile Include="Query\Contact\FilterContactByEmail.cs" />
     <Compile Include="Query\IFilterQuery.cs" />
     <Compile Include="Query\IFirstLevelQuery.cs" />
     <Compile Include="Query\IQuery.cs" />

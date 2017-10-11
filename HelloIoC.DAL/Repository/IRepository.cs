@@ -2,8 +2,8 @@
 
 namespace HelloIoC.DAL.Repository
 {
-    public interface IRepository
+    public interface IRepository<TDTO>
     {
-        ContactDTO GetById(int id);
+        TDTO GetById(int id);
     }
 }

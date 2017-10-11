@@ -2,6 +2,6 @@
 {
     interface IFilterQuery<TFilter, TDTO> : IQuery<TDTO>
     {
-        TFilter Filter { get; }
+        TFilter Filter { get; set; }
     }
 }

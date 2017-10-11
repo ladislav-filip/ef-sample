@@ -3,7 +3,7 @@ using HelloIoC.DAL.DTO;
 
 namespace HelloIoC.DAL.Repository
 {
-    public class ContactRepository : IRepository
+    public class ContactRepository : IRepository<ContactDTO>
     {
         private readonly Mapper mapper;
 
